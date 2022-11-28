@@ -1,0 +1,177 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-grid div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  animation: lds-grid 1.2s linear infinite;
+}
+.lds-grid div:nth-child(1) {
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+  top: 8px;
+  left: 56px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+  top: 32px;
+  left: 32px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+  top: 32px;
+  left: 56px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+  top: 56px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+  top: 56px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+  top: 56px;
+  left: 56px;
+  animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+.loader{
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.link{
+  text-decoration: none;
+  height: 60%;
+  width: 60%;
+}
+.img{
+  display: flex;
+  width: 80%;
+  height: 80%;
+  margin: 0  auto;
+  object-fit: contain;
+  opacity: 1;
+  max-height: 200px;
+  max-width: 200px;
+}
+.img:hover{
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.img-over{
+  display: flex;
+  margin: 0  auto;
+  object-fit: contain;
+  opacity: 0;
+  position: absolute;
+  max-height: 200px;
+  max-width: 200px;
+  top: 5%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+
+}
+.img-over:hover{
+  opacity: 1;
+  transition: 1s;
+  cursor: pointer;
+}
+.detail:hover{
+  opacity: 1;
+
+
+}
+.detail{
+  max-width: 300px;  
+  max-height: 300px;
+}
+.detail-imgs{
+  display: flex;
+}
