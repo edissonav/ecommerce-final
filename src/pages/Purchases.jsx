@@ -24,9 +24,9 @@ const Purchases = () => {
                             {purchase.cart.products?.[0]?.createdAt}
                         </Card.Text>
                         <Card.Body >
-                            <Card.Title>{purchase.cart?.products[0].title}</Card.Title>
-                            <Card.Title>{purchase.cart?.products[0].brand}</Card.Title>
-                            <Card.Title>{purchase.cart?.products[0].price}</Card.Title>
+                            <Card.Title>{purchase.cart?.products[0]?.title}</Card.Title>
+                            <Card.Title>{purchase.cart?.products[0]?.brand}</Card.Title>
+                            <Card.Title>{purchase.cart?.products[0]?.price}</Card.Title>
 
                         </Card.Body>
                     </Card></Link>
