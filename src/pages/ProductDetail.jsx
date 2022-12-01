@@ -26,7 +26,8 @@ const ProductDetail = () => {
             quantity: inputvalue
         };
         dispatch(postcartThunk(productadded))
-        console.log(productadded);
+/*         console.log(productadded);
+ */        alert('Product Added to cart succesfully')
 
     }
     const decrement =()=>{
@@ -73,7 +74,7 @@ const ProductDetail = () => {
                         <Card.Text>id:{findproduct?.id}</Card.Text>
 
                         <Button disabled={inputvalue === 1} className="btn btn-outline-primary addtocart" variant="btn btn-outline-primary" onClick={decrement}>-</Button>
-                        <input style={{'text-align':'center' }} type="text" value={inputvalue} onChange={e => setInputvalue(e.target.value)} />
+                        <input style={{'textAlign':'center' }} type="text" value={inputvalue} onChange={e => setInputvalue(e.target.value)} />
                         <Button className="btn btn-outline-primary addtocart" variant="btn btn-outline-primary" onClick={increment}>+</Button>
 
                     </Card.Body>

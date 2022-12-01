@@ -20,8 +20,8 @@ const Purchases = () => {
 
                 <Link className='link' to={`/product/${purchase.cart.products[0]?.id}`}>
                     <Card className='card-purchase' style={{ width: '18rem', margin: '0 auto'}}>
-                        <Card.Text>
-                            {purchase.cart.products?.[0].createdAt}
+                        <Card.Text> Purchased At:
+                            {purchase.cart.products?.[0]?.createdAt}
                         </Card.Text>
                         <Card.Body >
                             <Card.Title>{purchase.cart?.products[0].title}</Card.Title>
