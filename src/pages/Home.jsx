@@ -71,10 +71,10 @@ const Home = () => {
                                 {/*                                 <Card.Img className='img-over' variant="top" src={product?.productImgs[1]} />
  */}
                                 <Card.Body className='card-body'>
-                                    <Card.Title className='title'>{product.title}</Card.Title>
-                                    <Card.Text>price:${product.price}</Card.Text>
+                                    <Card.Title className='title'>{product?.title}</Card.Title>
+                                    <Card.Text>price:${product?.price}</Card.Text>
 
-                                    <Card.Text>id:{product.id}</Card.Text>
+                                    <Card.Text>id:{product?.id}</Card.Text>
 
                                 </Card.Body>
                             </Link>

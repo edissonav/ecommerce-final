@@ -30,7 +30,7 @@ const Cart = ({show, handleClose}) => {
                 <Offcanvas.Header>
                  {item.brand} 
             </Offcanvas.Header>
-                <Offcanvas.Title>{item.title} </Offcanvas.Title>
+                <Offcanvas.Title>{item?.title} </Offcanvas.Title>
                 <Offcanvas.Header>$: {item.price}</Offcanvas.Header>
                 <Button onClick={()=>dispatch(deletecartThunk(item.id))} className="btn btn-outline-danger " variant="btn btn-outline-danger"><i className='bx bx-trash'></i></Button>
                 </Link>    
