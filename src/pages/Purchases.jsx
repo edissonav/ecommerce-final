@@ -18,13 +18,16 @@ const Purchases = () => {
             <h1>Purchases</h1>
             {purchasesList.map(purchase => (
 
-                <Link to={`/product/${purchase.cart.products[0]?.id}`}>
-                    <Card style={{ width: '18rem', margin: '0 auto'}}>
+                <Link className='link' to={`/product/${purchase.cart.products[0]?.id}`}>
+                    <Card className='card-purchase' style={{ width: '18rem', margin: '0 auto'}}>
                         <Card.Text>
-                            {purchase.cart.products[0]?.createdAt}
+                            {purchase.cart.products?.[0].createdAt}
                         </Card.Text>
-                        <Card.Body>
-                            <Card.Title>{purchase.cart.products[0]?.title}</Card.Title>
+                        <Card.Body >
+                            <Card.Title>{purchase.cart?.products[0].title}</Card.Title>
+                            <Card.Title>{purchase.cart?.products[0].brand}</Card.Title>
+                            <Card.Title>{purchase.cart?.products[0].price}</Card.Title>
+
                         </Card.Body>
                     </Card></Link>
 

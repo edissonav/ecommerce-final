@@ -28,7 +28,7 @@ localStorage.setItem("token", res.data.data.token)})
     
     return (
         <div>
-            <h1>Login route</h1>
+            <h1>Login</h1>
             <Form onSubmit={handleSubmit(submit)} style={{maxWidth: 500 , margin: '0 auto'}}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
